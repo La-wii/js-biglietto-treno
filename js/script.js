@@ -1,7 +1,7 @@
 var km = parseInt(prompt('inserisci i km che vuoi percorrere'));
 var eta = parseInt(prompt('inserisci la tua età'));
-var minorenne;
-var over65;
+// var minorenne;
+// var over65;
 var biglietto = 0.21 * km;
 
 
@@ -18,8 +18,7 @@ if (eta <= 17) {
 }
 
 else if (eta >= 65) {
-    biglietto = biglietto - biglietto * 40 / 100;
-    
+    biglietto = biglietto - biglietto * 40 / 100;    
 }
 
 document.getElementById("prezzo").innerHTML = biglietto.toFixed(2); 
